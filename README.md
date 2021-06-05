@@ -17,6 +17,7 @@
 3. The retiring_titles table summarizes the number of retiring employees by job title. There are 7 titles total, with the majority of the employees falling in the Senior Engineer title (33% of the total retiring employees).
 
 ![Summary Retiring Titles Count](Analysis/retiring_titles.png)
+
 4. The mentorship_eligibilty table shows that there are 1,549 employees who are eligible to be mentored as they are current employees born between January 1, 1965 and December 31, 1965.
 
 ![Summary Mentorship](Analysis/mentorship_eligibilty.png)
