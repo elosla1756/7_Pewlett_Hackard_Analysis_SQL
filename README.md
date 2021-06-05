@@ -15,12 +15,16 @@
 1. In the retirement_titles table, we have 133,776 employees who are retiring. However, we have duplicates since many employees were promoted during their employment. This table does show how long they have held each position during their careers.
 2. In the unique_titles table, we have removed duplicates and only kept the retiring employees' most recent titles. We now have a list of 90,398 employees who are retiring. 
 3. The retiring_titles table summarizes the number of retiring employees by job title. There are 7 titles total, with the majority of the employees falling in the Senior Engineer title (33% of the total retiring employees).
+
 ![Summary Retiring Titles Count](Analysis/retiring_titles.png)
 4. The mentorship_eligibilty table shows that there are 1,549 employees who are eligible to be mentored as they are current employees born between January 1, 1965 and December 31, 1965.
+
 ![Summary Mentorship](Analysis/mentorship_eligibilty.png)
 
 ## **Analysis summary**:
 
-### There are 90,398 employees who are about to retire (born between January 1, 1952 and December 31, 1955), over 60% of them currently holding Senior positions (Senior Engineers and Senior Staff). Unfortunately, we only counted 1,549 employees who are eligible to be mentored, creating a gap of 88,849 employees.
+### There are **90,398 employees** who are about to retire (born between January 1, 1952 and December 31, 1955), over 60% of them currently holding Senior positions (Senior Engineers and Senior Staff). Unfortunately, we only counted **1,549 employees* who are eligible to be mentored, creating a gap of 88,849 employees.
+
 ### What our mentorship_eligibilty table doesnt summarize is the number of eligible employees by job title. Since we will need to replace many Senior Engineers and Senior Staff, we need to understand which position these eligible employees currently hold. We could query our mentorship_eligibilty table to display the SELECT COUNT by mentorship_eligibilty.title.
+
 ### Lastly, our mentorship_eligibilty table is also missing the department names where most retiring employees currently work as well as the department names were eligible mentors are working. There may be gap of potential talents is specific departments, and it would be interesting to know that to understand where Pewlett Packard needs to invest heavily. In order to get this data, we would need to JOIN information from our Dept_emp table, which includes a dept_no column using the emp_no as our primary key.  
